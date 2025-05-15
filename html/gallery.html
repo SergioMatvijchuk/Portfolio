@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Sergio Matviichuk</title>
+
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+<style>
+	.gallery {
+		height: 90vh;
+		/* или нужная фиксированная высота */
+
+		/* чтобы внешних скроллов не было */
+		display: flex;
+		flex-direction: column;
+		width: 95%;
+		overflow: hidden;
+		max-height: 100vh;
+		/* если нужно */
+	}
+
+	.content-page {
+
+		/* чтобы занял оставшееся место */
+		overflow-y: auto;
+		width: 99%;
+
+		box-sizing: border-box;
+
+		/* вертикальная прокрутка */
+	}
+
+	.gallery-content {
+		height: auto;
+		min-height: 100%;
+		box-sizing: border-box;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+
+	}
+</style>
+
+<body>
+
+
+	<div class="menu-overlay"></div>
+
+	<main class="main">
+
+		<section class="gallery">
+
+			<div class="sidebar">
+				<div class="menu-wrap">
+					<a href="index.html" class="sidebar-logo">
+						<img src="images/logo.svg" alt="Sergio">
+					</a>
+					<nav class="menu-nav">
+						<ul>
+							<li><a href="index.html" data-i18n="home"></a></li>
+							<li><a href="about.html" data-i18n="about"></a></li>
+							<li><a href="gallery.html" data-i18n="gallery"></a></li>
+							<li><a href="contact.html" data-i18n="contact"></a></li>
+						</ul>
+
+						<div class="menu-contacts">
+							<a href="index.html" class="menu-contacts__item">
+								<span class="menu-contacts__icon">
+									<i class="fa fa-phone-square"></i>
+								</span>
+								<p data-i18n="phone"></p>
+							</a>
+
+							<a href="index.html" class="menu-contacts__item">
+								<span class="menu-contacts__icon">
+									<i class="fa fa-envelope"></i>
+								</span>
+								<p data-i18n="email"></p>
+							</a>
+
+							<div class="menu-social">
+								<a href="https://t.me/lel_al_dente" target="_blank" class="menu-social__item">
+									<i class="fab fa-instagram"></i>
+								</a>
+							
+								<a href="index.html" target="_blank" class="menu-social__item">
+									<i class="fab fa-facebook"></i>
+								</a>
+							
+								<a href="index.html" target="_blank" class="menu-social__item">
+									<i class="fab fa-telegram"></i>
+								</a>
+							
+								<a href="index.html" target="_blank" class="menu-social__item">
+									<i class="fab fa-whatsapp"></i>
+								</a>
+								<a href="https://www.linkedin.com/in/sergiomatviichuk/" target="_blank" class="menu-social__item">
+									<i class="fab fa-linkedin"></i>
+								</a>
+							
+								<a href="https://github.com/SergioMatvijchuk?tab=repositories" target="_blank" class="menu-social__item">
+									<i class="fab fa-github"></i> </a>
+							
+							</div>
+						</div>
+						<div class="menu-close__wrap">
+							<a href="#" class="menu-close"><img style="transform: rotate(180deg);"
+									src="images/arrow-right.svg" alt=""></a>
+						</div>
+					</nav>
+				</div>
+
+				<a href="index.html" class="logo">
+					<img src="images/logo.svg" alt="">
+				</a>
+				<select onchange="loadLanguage(this.value)">
+					<option value="en">EN</option>
+					<option value="ru">RU</option>
+				</select>
+				<a href="#" class="hamburger-button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+
+			<div class="content-page gallery-content gallery-wrap">
+				<div class="content-inner">
+
+					<div class="title-wrapper text-center">
+						<h2 class="title" data-i18n="portfolio"></h2>
+						<div class="subtitle">
+							<p></p>
+						</div>
+					</div>
+
+					<div class="album-tab">
+						<a href="#album-animals" class="is-active">Car Sharing</a>
+						<a href="#album-nature">Notion</a>
+					</div>
+
+
+					<div class="grid-album is-active" id="album-animals">
+						<div class="project-portfolio">
+							<h2 data-i18n="carSharing_title"></h2>
+							<h3><a href="https://dev.azure.com/azekaggg/HelloWorld/_git/HelloWorldCar">Azure repository</a></h3>
+							<p data-i18n="carSharing_desc">
+							</p>
+
+							<p data-i18n="carSharing_p1">
+							</p>
+							<img src="../html/images/HW/hw9.jpg" alt="Регистрация и интерфейс" />
+							<p data-i18n="carSharing_p2">
+
+							</p>
+							<img src="../html/images/HW/hw3.png" alt="Разграничение ролей" />
+
+							<p data-i18n="carSharing_p3">
+							</p>
+
+							<img src="../html/images/HW/hw4.png" alt="Архитектура приложения" />
+							<p data-i18n="carSharing_p4">
+							</p>
+
+							<p data-i18n="carSharing_p5">
+							</p>
+							<img src="../html/images/HW/hw10.png" alt="Архитектура приложения" />
+
+							<p data-i18n="carSharing_p6">
+							</p>
+
+							<p data-i18n="carSharing_result">
+							</p>
+
+						</div>
+					</div>
+					<!-- Album Animals END -->
+
+					<!-- Album Nature START -->
+					<div class="grid-album" id="album-nature">
+						<div class="project-portfolio">
+							<h2 data-i18n="notion_title"></h2>
+							<h3><a href="https://github.com/SergioMatvijchuk/testNotion">GitHub repository</a></h3>
+							<p data-i18n="notion_desc"></p>
+
+							<p data-i18n="notion_p1"></p>
+							<img src="../html/images/NT/nt1.jpg" alt="Интерфейс React" />
+
+							<p data-i18n="notion_p2"></p>
+							<img src="../html/images/NT/nt2.jpg" alt="Локальное хранилище" />
+
+							<p data-i18n="notion_p3"></p>
+							<img src="../html/images/NT/nt3.jpg" alt="Drag & Drop функциональность" />
+
+							<p data-i18n="notion_p4"></p>
+							<img src="../html/images/NT/nt4.jpg" alt="Адаптивный дизайн" />
+
+							<p data-i18n="notion_p5"></p>
+							<img src="../html/images/NT/nt5.jpg" alt="ASP.NET Core API" />
+
+							<p data-i18n="notion_p6"></p>
+							<img src="../html/images/NT/nt6.jpg" alt="База данных MySQL" />
+
+							<p data-i18n="notion_p7"></p>
+							<img src="../html/images/NT/nt7.jpg" alt="Кеширование Redis" />
+
+							<p data-i18n="notion_p8"></p>
+							<img src="../html/images/NT/nt8.png" alt="Макеты Figma" />
+
+							<p data-i18n="notion_p9"></p>
+							<img src="../html/images/NT/nt9.png" alt="Развертывание на Azure" />
+
+							<p data-i18n="notion_deadline"></p>
+						</div>
+
+
+					</div>
+					<!-- Album Nature END -->
+
+
+				</div><!-- end container-inner -->
+			</div>
+		</section> <!-- end gallery -->
+
+	</main>
+
+	<footer class="site-footer">
+		<div class="footer-copyright">
+			© 2025 <strong>Sergio Matviichuk</strong>. All rights reserved.
+		</div>
+	</footer>
+
+
+	<script src="js/jquery-3.7.0.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/magnific-popup.min.js"></script>
+	<script src="js/blazy.min.js"></script>
+	<script src="js/parazoom.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/lang/i18n.js"></script>
+</body>
+
+</html>
